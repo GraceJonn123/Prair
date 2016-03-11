@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#000000">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/imageView5"
+        android:background="@drawable/smokey"
+        android:layout_weight="0.33"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="143dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Do you wanna Know?.."
+        android:id="@+id/las"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.79"
+        android:textColor="@color/white"
+        android:layout_marginBottom="147dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="main menu"
+        android:id="@+id/valamain"
+        android:backgroundTint="@color/orange"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:id="@+id/valanext"
+        android:backgroundTint="@color/orange"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/valamain"
+        android:layout_toEndOf="@+id/valamain" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prev."
+        android:id="@+id/valaprev"
+        android:backgroundTint="@color/orange"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/valamain"
+        android:layout_toStartOf="@+id/valamain" />
+
+</RelativeLayout>
